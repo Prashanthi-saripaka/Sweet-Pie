@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>overview </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="SweetPieLogo.png" "image/png">
+        
+
+        <style>
+            body{
+            margin-top: 0px;
+            margin-left:auto;
+            margin-right:auto;    
+            background-color: #e6e4d9; 
+            font-family:verdana;
+            
+            
+            }
+            #mainheader{
+                background-color:rgb(233, 199, 187);
+            }
+            nav{
+                height:60px;
+                width:1000px;
+                margin:0 auto 20px;
+            }
+            #leftmenu{
+                float:left;
+                width:30%;
+                margin-bottom: 20px;
+            }
+            #main{
+                float:right;
+                width: 70%;
+                margin-bottom:20px;
+            }
+            .searchbox{
+                padding:5px;
+                
+                width:200px;
+            }
+            footer{
+                clear:both;
+                width:100%;
+            }
+            /*aside{
+                text-align:center;
+            }*/
+            header,
+                    footer,
+                    aside,
+                    nav,
+                    main,
+                    article,
+                    figure{
+                        display:block;
+                    }
+                    table, td,th{
+                        border:1px solid black;
+                        border-collapse:collapse;
+                        padding:10px;
+                    }
+                    nav>ul{
+                        list-style-type:none;
+                        margin:0;
+                        padding:0;
+                    }
+                    nav>ul>li{
+                        float:left;
+                    }
+                    nav>ul>li>a {
+                        display:block;
+                        color:white;
+                        text-align:center;
+                        padding: 16px;
+                        text-decoration:none;
+                        font-weight:bold;
+                    }
+                    
+        </style>
+
+    </head>
+
+    <body>
+        
+        <header id="mainheader">
+            <nav>
+                <ul>
+                    
+                    <li><a href="../Pie shop/Home.html">Home</a></li>
+                    <li><a href="../Pie shop/Pie.html">Pie</a></li>
+                    <li><a href="../Pie shop/Menu.html">Menu</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+        <div style="width:1300px;margin-left:auto;margin-right:auto;">
+            <aside id="leftmenu">
+                <a href="Home.html">
+               <img src="SweetPieLogo.png" width="250px">
+                </a>
+                <header>
+                    <h4>Browse Our Pies</h4>
+                </header>
+                <ul>
+                    <li> <a href="Home.html">Home</a></li>
+                    <li><a href="Pie.html">Apple Pie</a></li>
+                    <li><a href="Menu.html">Our Menu</a></li>
+                </ul>
+                <form action="pie-page.html" method="POST" enctype="application/x-www-form-urlencoded">
+                <input type="search" class="searchbox" placeholder="Search Here For Pies"/>
+                <input type="submit" name="submit">
+                </form>
+            </aside> 
+            <main id="main">
+                <table>
+                    <caption>Check out our Delicious Cakes and Pies</caption>
+                  <!-- <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Pie Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>-->
+                    <tbody>
+                        <tr>
+                            <td colspan="4">Here are Our Pies</td>
+                        </tr>
+                    <tr>
+                        <td><img src="../HTML Images/building-websites-html/Assets/m6/images/products/cheesecake.jpg" width="100px"> </td>
+                        <td>Cheese cake</td>
+                        
+                        <td>$12.95</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../HTML Images/building-websites-html/Assets/m6/images/products/cherrypiesmall.jpg" width="100px"> </td>
+                        <td>Cherry pie</td>
+                        
+                        <td>$12.95</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../HTML Images/building-websites-html/Assets/m6/images/products/christmasapplepiesmall.jpg" width="100px"> </td>
+                        <td>Christmas Apple pie</td>
+                        
+                        <td>$12.95</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../HTML Images/building-websites-html/Assets/m6/images/products/cranberrypiesmall.jpg" width="100px"> </td>
+                        <td>Cranberry cheese s cake</td>
+                        
+                        <td>$12.95</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../HTML Images/building-websites-html/Assets/m6/images/products/peachpiesmall.jpg" width="100px"> </td>
+                        <td>Peach pie </td>
+                        
+                        <td>$12.95</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../HTML Images/building-websites-html/Assets/m6/images/products/pumpkinpiesmall.jpg" width="100px"> </td>
+                        <td>Pumpkin cake</td>
+                        
+                        <td>$12.95</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../HTML Images/building-websites-html/Assets/m6/images/products/rhubarbpiesmall.jpg" width="100px"> </td>
+                        <td>rhubarbpie</td>
+                        
+                        <td>$12.95</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../HTML Images/building-websites-html/Assets/m6/images/products/strawberrycheesecakesmall.jpg" width="100px"> </td>
+                        <td>Strawberry cheese cake</td>
+                        
+                        <td>$12.95</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../HTML Images/building-websites-html/Assets/m6/images/products/strawberrypiesmall.jpg" width="100px"> </td>
+                        <td>Strawberry Pie </td>
+                        
+                        <td>$12.95</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../HTML Images/building-websites-html/Assets/m6/images/products/applepie.jpg" width="100px"> </td>
+                        <td>Apple Pie </td>
+                        
+                        <td>$12.95</td>
+                        <td><a href="pie-page.html"> View Details</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../HTML Images/building-websites-html/Assets/m6/images/products/applepiesmall.jpg" width="100px"> </td>
+                        <td>Apple Pie Small </td>
+                        
+                        <td>$10.95</td>
+                        <td>View Details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../HTML Images/building-websites-html/Assets/m6/images/products/blueberrycheesecakesmall.jpg" width="100px"> </td>
+                        <td>Blueberry cheese cake </td>
+                        
+                        <td>$12.95</td>
+                        <td>View Details</td>
+                    </tr>
+                </tbody>
+                </table>
+            </main>
+            <footer>
+            
+                <p>Our Address is <address>Sweet Pie Shop - Russels Street 505 Kolkata</address>
+                </p>
+                <small>&copy; 2020 Sweet Pie Shop - All right reserved</small>    
+
+        </footer>
+        </div>
+        
+
+    </body>
+</html> 
+
+
