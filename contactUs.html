@@ -4,16 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home Page</title>
+    <title>ContactUs</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="SweetPieLogo.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-
-
-
 
     <style>
         body {
@@ -92,10 +86,18 @@
             font-weight: bold;
         }
 
-        h4 {
-            font-family: cookie;
-            font-size: 40px;
-            font-weight: normal;
+        fieldset {
+            border-color: chocolate;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        fieldset>legend {
+            color: black;
+        }
+
+        form {
+            display: block;
         }
     </style>
 
@@ -117,64 +119,41 @@
     </header>
     <div style="width:1300px;margin-left:auto;margin-right:auto;">
         <aside id="leftmenu">
-
             <img src="Images/SweetPieLogo.png" width="250px">
-
             <header>
                 <h4>Browse Our Pies</h4>
             </header>
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li><a href="Pie.html">Apple Pie</a></li>
-                <li><a href="Menu.html">Our Menu</a></li>
-                <li><a href="contactUs.html">Contact</a></li>
-            </ul>
-            <!--<input type="search" class="searchbox" placeholder="Search Here For Pies"/>-->
-
-            <form action="search.html" enctype="application/x-www-form-urlencoded" method="GET">
-                <input name="q">
-                <input type="submit">
-            </form>
-
+            <input type="search" class="searchbox" placeholder="Search Here For Pies" />
         </aside>
         <main id="main">
-            <article>
-                <header>
-                    <h1 style="font-size: 40px;color:rgb(227, 157, 97);"> Welcome to Sweet Pie Shop!</h1>
-                </header>
 
-                <img src="Images/baker-holding-freshly-baked-cherry-pie-yummy-dessert.jpg" width="800px">
-
-
-                <fieldset>
-                    <legend>Our History</legend>
+            <fieldset>
+                <legend>Contact Us</legend>
+                <form action="SweetPieLogo.png" method="POST" enctype="application/x-www-form-urlencoded">
                     <p>
-                        For many years, we have been baking the most delicious pies at her home. In 2013, we opened our
-                        first
-                        store in Brussels (Belgium) in a cosy little street near the Grand Market. People from all over
-                        the world fell in love
-                        with the soft cakes, heavenly cheese cakes, spicy apple pies... The store became a success in no
-                        time.
-                        <br>In 2015, no less than 100 pies were sold every day and Sweet Pie Shop moved into a larger
-                        building.
-                        After receiving many requests, it became clear that our next step was making it possible to
-                        order pies from the
-                        comfort of your own home and from anywhere in the world. You are now lookingat the result of
-                        this: our very own
-                        webstore,making it possible to order Bethany's delicious pies whenever you feel like it!
-                    </p>
-                </fieldset>
-            </article>
-            <section>
-                <h3 style="font-family:verdana;">Pie of the week!!</h3>
-                <h2>
-                    <This week Special!!>
-                </h2>
-                <h4>Blueberry Pie</h4>
-                $12.95 - Serves 4<br>
-                <img src="Promotion.png" width="500px" height="">
-            </section>
+                        <label for="email">Email:</label>
+                        <input type="email" name="Email" placeholder="Enter your email">
+                    </p><br />
+
+                    Password: <input type="password" name="password" placeholder="Password"> <br />
+                    severity: <input type="number" name="severity"><br />
+                    Issue-Date: <input type="date" name="date"><br />
+                    Issue-time: <input type="time" name="IssueTime"><br />
+                    Feedback type: <select name="feedback">
+                        <optgroup label="Issue">
+                            <option value="none">None</option>
+                            <option value="General issue">general issue</option>
+                            <option value="payment">Payment Issue</option>
+                            <option value="website issue">Website Issue</option>
+                    </select>
+                    </optgroup><br />
+                    What do you think of our facility? : <textarea name="message"
+                        placeholder="Type here...."></textarea>
+                    <input type="submit" value="Submit">
+
+                </form>
         </main>
+        </fieldset>
         <footer>
             <p>Our Address is
             <address>Sweet Pie Shop - Russels Street 505 Kolkata</address>
